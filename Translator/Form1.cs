@@ -222,7 +222,7 @@ namespace Translator
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
         {
-            List<String> fonts = new List<string>();
+            List<String> fonts = new List<String>();
 
             foreach (FontFamily font in FontFamily.Families)
                 fonts.Add(font.Name);
@@ -233,6 +233,8 @@ namespace Translator
 
         private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            List<String> font = new List<String>();
+
             richTextBox1.Font = new Font(toolStripComboBox1.SelectedItem.ToString(), 12);
         }
     }
