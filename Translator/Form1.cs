@@ -233,8 +233,6 @@ namespace Translator
 
         private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<String> font = new List<String>();
-
             richTextBox1.Font = new Font(toolStripComboBox1.SelectedItem.ToString(), 12);
         }
     }
